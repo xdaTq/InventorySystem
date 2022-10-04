@@ -147,7 +147,7 @@ if(isset($_GET['action']) && $_GET['id']){
                                         }
                                     ?>
                                 <?php 
-                                // search bar
+                                // search bar testing
                                 if(isset($_GET['search'])) {
                                     $filtervalues = $_GET['search'];
                                     $query = "SELECT * FROM `items` WHERE CONCAT(`item`,`s-n`) LIKE '%$filtervalues%' ";
