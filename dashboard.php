@@ -85,13 +85,6 @@ if(isset($_GET['action']) && $_GET['id']){
                                 <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
                             </svg>
                         </h3>
-
-                        <form action="dashboard.php" method="GET">
-                            <div class="input-group mb-3">
-                                <input type="text" name="search" class="form-control" placeholder="Search data">
-                                <button type="submit" class="btn btn-primary">Search</button>
-                            </div>
-                        </form>
                         
                         <a class="btn btn-primary float-right" id="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
@@ -146,45 +139,6 @@ if(isset($_GET['action']) && $_GET['id']){
                                     <?php 
                                         }
                                     ?>
-                                <?php 
-                                // search bar
-                                if(isset($_GET['search'])) {
-                                    $filtervalues = $_GET['search'];
-                                    $query = "SELECT * FROM `items` WHERE CONCAT(`item`,`s-n`) LIKE '%$filtervalues%' ";
-                                    $query_run = mysqli_query($con, $query);
-
-                                    if(mysqli_num_rows($query_run) > 0) {
-                                        foreach($query_run as $items) {
-                                ?>
-                                            <tr>
-                                                <td><?= $items['id']; ?></td>
-                                                <td><?= $items['item']; ?></td>
-                                                <td>
-                                                    <a href="edit.php?id=<?= $items['id']; ?>&action=edit" class="btn btn-warning">
-
-                                                        Edit
-                                                    </a>
-                                                    <a href="dashboard.php?id=<?= $items['id']; ?>&action=delete" class="btn btn-danger">
-
-                                                        Delete
-                                                    </a>
-                                                </td>
-                                                <td><?= $items['count']; ?></td>
-                                                <td><?= $items['s-n']; ?></td>
-                                                <td><?= $items['desc']; ?></td>
-                                                <th><h6><?= $items['added_at']; ?></h6></th>
-                                            </tr>
-                                            <?php
-                                        }
-                                    } else {
-                                    ?>
-                                        <tr>
-                                            <td colspan="4">No Record Found</td>
-                                        </tr>
-                                    <?php
-                                        }
-                                    }
-                                ?>
                                 </tbody>
                             </table>
                         </div>
