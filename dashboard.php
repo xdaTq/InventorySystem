@@ -71,7 +71,7 @@ if(isset($_GET['action']) && $_GET['id']){
 		</ul>
 	</nav>
 
-    <!-- Inventory List -->
+    <!-- Inventory List! -->
     <br>
     <div class="container w-75 pr-5 float-right justify-content-center">
         <div class="row">
