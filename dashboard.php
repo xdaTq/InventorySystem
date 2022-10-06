@@ -54,7 +54,7 @@ nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,7 +165,7 @@ nav ul li a {
 
     <!-- Inventory List! -->
     <br>
-    <div class="container-fluid w-75 pr-5 float-right justify-content-center inv">
+    <div class="container-fluid w-75 inv">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
