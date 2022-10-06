@@ -130,6 +130,16 @@ nav ul li a {
         padding-top: 280px;
     }
 }
+@media screen and (max-width: 1920px) {
+    .inv {
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .inv {
+        margin-left: 20%;
+    }
+}
 </style>
 <body>
 
