@@ -73,8 +73,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>InventorySystem - Admin Reset Password</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body { 
+            color: #fff;
+            font: 14px sans-serif; 
+            background-color: #343A40;
+        }
+        .wrapper { 
+            width: 360px; 
+            padding: 20px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>

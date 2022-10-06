@@ -34,11 +34,103 @@ if(isset($_GET['action']) && $_GET['id']){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InventorySystem</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
+<style>
+    body { 
+    font: 14px sans-serif; 
+    text-align: center;
+    background-color: #343A40;
+}
 
+a {
+    list-style: none;
+    text-decoration: none !important;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+}
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    padding-top: 40px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+}
+.logo img {
+    width: 100%;
+}
+
+.signout {
+    padding-top: 200px;
+}
+
+/* Overlay for the opoup */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px; /*Half the value of width to center div*/
+    margin-top: -250px; /*Half the value of height to center div*/
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#popupclose {
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 1080px){
+    .signout {
+        padding-top: 500px;
+    }
+}
+@media screen and (max-height: 900px) {
+    .signout {
+        padding-top: 280px;
+    }
+}
+</style>
 <body>
 
     <!-- Sidebar -->
@@ -65,7 +157,7 @@ if(isset($_GET['action']) && $_GET['id']){
                 </a>
 			</li>
 
-            <li style="padding-top: 200px;">
+            <li class="signout">
                 <a href="logout.php" class="btn btn-primary">Sign Out</a>
             </li>
 		</ul>
@@ -73,7 +165,7 @@ if(isset($_GET['action']) && $_GET['id']){
 
     <!-- Inventory List! -->
     <br>
-    <div class="container w-75 pr-5 float-right justify-content-center">
+    <div class="container-fluid w-75 pr-5 float-right justify-content-center inv">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">

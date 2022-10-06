@@ -40,6 +40,10 @@ nav ul li a {
     width: 100%;
 }
 
+.signout {
+    padding-top: 200px;
+}
+
 /* Overlay for the opoup */
 #overlay {
     display: none;
@@ -72,4 +76,15 @@ nav ul li a {
     float: right;
     padding: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-height: 1080px){
+    .signout {
+        padding-top: 500px;
+    }
+}
+@media screen and (max-height: 900px) {
+    .signout {
+        padding-top: 280px;
+    }
 }
