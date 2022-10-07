@@ -325,7 +325,7 @@ nav ul li a {
                                 <br>
                                 <input type="text" class="form-control" name="s_n" placeholder="Enter Serial Number" required>
                                 <br>
-                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3">&#10</textarea>
+                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3" required></textarea>
                                 <br>
                                 <br>
                                 <div class="input-group">
