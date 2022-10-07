@@ -8,7 +8,8 @@ CREATE TABLE `users` (
     `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `username` VARCHAR(50) NOT NULL UNIQUE,
     `password` VARCHAR(255) NOT NULL,
-    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `role` tinyint(1) NOT NULL DEFAULT 0 COMMENT '1=Admin | 0=User'
 );
 -- create admin table
 CREATE TABLE `admin` (
@@ -25,6 +26,5 @@ CREATE TABLE `items` (
   `count` int(11) NOT NULL,
   `s_n` varchar(255) NOT NULL UNIQUE,
   `desc` varchar(255) NOT NULL,
-  `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-  `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1=Active | 0=Inactive'
+  `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
