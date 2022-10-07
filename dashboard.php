@@ -13,7 +13,6 @@ if (isset($_POST['items-submit'])) {
     createItem($_POST);
 }
 
-
 // inv
 $get_item = getItem();
 

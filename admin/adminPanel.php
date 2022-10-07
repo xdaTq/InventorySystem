@@ -58,10 +58,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         .signout {
             padding-top: 200px;
         }
-        */
+        
         .signoutbtn {
             width: 100%;
         }
+        */
         /*
         @media screen and (min-height: 1080px){
             .signout {
