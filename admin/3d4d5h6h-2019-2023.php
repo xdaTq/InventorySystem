@@ -1,6 +1,7 @@
 <?php
+// create account
 // Include config file
-require_once "./database/config.php";
+require_once "/Applications/MAMP/htdocs/Inv/database/config.php";
 
 // admin access
 
@@ -144,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Create">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
-            <p>Back to Normal <a href="index.php">Back!</a>.</p>
+            <p>Back to Normal <a href="/index.php">Back!</a>.</p>
         </form>
     </div>    
 </body>

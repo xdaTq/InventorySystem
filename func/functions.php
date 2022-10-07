@@ -1,5 +1,5 @@
 <?php
-require_once './database/config.php';
+require_once '/Applications/MAMP/htdocs/Inv/database/config.php';
 
 function createItem($request){
     global $con;
@@ -8,7 +8,7 @@ function createItem($request){
 
     while($item_data = mysqli_fetch_array($fetch_data)) {
 
-        $ser_n = $item_data['s-n'];
+        $ser_n = $item_data['s_n'];
 
     }
 
@@ -18,7 +18,7 @@ function createItem($request){
     $s_n = mysqli_real_escape_string($con, $request['s_n']);
 
     if ($s_n !== $ser_n) {
-        $query = "INSERT INTO `items`(`item`, `count`, `desc`, `s-n`) VALUES('$items', '$count', '$desc', '$s_n')";
+        $query = "INSERT INTO `items`(`item`, `count`, `desc`, `s_n`) VALUES('$items', '$count', '$desc', '$s_n')";
     } else if ($s_n === $ser_n) {
         header('location: error/SR-error.php');
     }

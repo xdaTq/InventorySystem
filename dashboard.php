@@ -1,18 +1,18 @@
 <?php
 require_once "./database/config.php";
-require 'functions.php';
+require './func/functions.php';
 // Initialize the session
 session_start();
-
-if (isset($_POST['items-submit'])) {
-    createItem($_POST);
-}
-
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
+
+if (isset($_POST['items-submit'])) {
+    createItem($_POST);
+}
+
 
 // inv
 $get_item = getItem();
@@ -37,43 +37,36 @@ if(isset($_GET['action']) && $_GET['id']){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InventorySystem</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style/style.css">
 </head>
 <style>
-    body { 
-    font: 14px sans-serif; 
-    text-align: center;
-    background-color: #343A40;
+body { 
+    background-color: #faf9f5;
 }
-
-a {
-    list-style: none;
-    text-decoration: none !important;
+h5 {
+    text-align: center;
+}
+nav {
+    background-color: #e9e9e9;
 }
 nav ul {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 200px;
+    width: 220px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #262626;
-}
-nav ul li {
-    list-style: none;
-    text-decoration: none;
+    color: black;
+    background-color: #e9e9e9;
 }
 nav ul li a {
     display: block;
-    text-decoration: none;
-    font-size: 15px;
-    color: #fff;
-    padding-top: 40px;
+    color: black;
+    padding-top: 20px;
 }
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     overflow: hidden;
     margin: 25px auto;
@@ -81,9 +74,13 @@ nav ul li a {
 .logo img {
     width: 100%;
 }
-
+/*
 .signout {
-    padding-top: 200px;
+    padding-top: 100px;
+}
+*/
+.signoutbtn {
+    width: 100%;
 }
 
 /* Overlay for the opoup */
@@ -107,7 +104,7 @@ nav ul li a {
     left: 50%;
     background: #fff;
     width: 500px;
-    height: 500px;
+    height: 550px;
     margin-left: -250px; /*Half the value of width to center div*/
     margin-top: -250px; /*Half the value of height to center div*/
     z-index: 1;
@@ -119,17 +116,20 @@ nav ul li a {
     padding: 10px;
     cursor: pointer;
 }
-
+/*
 @media screen and (max-height: 1080px){
     .signout {
         padding-top: 500px;
     }
 }
+
 @media screen and (max-height: 900px) {
     .signout {
-        padding-top: 280px;
+        padding-top: 400px;
     }
 }
+*/
+
 @media screen and (max-width: 1920px) {
     .inv {
         margin-left: 15%;
@@ -141,41 +141,76 @@ nav ul li a {
     }
 }
 </style>
-<body>
+<body> 
 
-    <!-- Sidebar -->
     <nav>
-		<ul>
-			<li class="logo"><img alt="" src="./img/default.png"></li>
-            <h4 class="my-5 text-white">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?></h4>
-			<li>
-				<a href="profile.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row w-50">
+                <div class="col">
+                    <button class="w-100 btn-success">
+                        <a href="./func/exportData.php" class="text-white">Export</a>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="w-100 btn-warning">
+                        <a href="exportData.php" class="text-white">Config</a>
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="w-100 btn-secondary">
+                        <a href="exportData.php" class="text-white">More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <nav class="nav flex-column">
+        <ul class="nav flex-column">
+            <li class="logo"><img alt="" src="./img/default.png"></li>
+            <h5 class="text-black">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?></h5>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="profile.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                     </svg>
                     Profile
                 </a>
-			</li>
-			<li>
-				<a href="dashboard.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-server" viewBox="0 0 16 16">
-                        <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"/>
-                        <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"/>
-                        <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"/>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16">
+                        <path d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
                     </svg>
                     Database
                 </a>
-			</li>
-
-            <li class="signout">
-                <a href="logout.php" class="btn btn-primary">Sign Out</a>
             </li>
-		</ul>
-	</nav>
+            <li class="nav-item">
+                <a class="nav-link" href="docs.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-code" viewBox="0 0 16 16">
+                        <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                    </svg>
+                    Docs
+                </a>
+            </li>
+
+            <li class="signout nav-item">
+                <button class="btn-primary signoutbtn">
+                    <a href="logout.php" class="nav-link text-white">
+                        Sign Out
+                    </a>
+                </button>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Inventory List! -->
     <br>
-    <div class="container-fluid w-75 inv">
+    <div class="container-fluid w-75 fw-light inv">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -188,24 +223,27 @@ nav ul li a {
                             </svg>
                         </h3>
                         
-                        <a class="btn btn-primary float-right" id="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                            </svg>
-                            Add Items
-                        </a>
+                        <button class="btn-light">
+                            <a class="float-right" id="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                </svg>
+                                Add Items
+                            </a>
+                        </button>
                     </div>
                         <div class="card-body">
-                            <table class="table table-striped table-dark table-hover">
+                            <table class="table table-striped table-hover table-bordered">
                                 <thead>
                                     <tr>
+                                    <th></th>
                                     <th scope="col">ID</th>
                                     <th scope="col">Items</th>
-                                    <th>Action</th>
                                     <th>Count</th>
                                     <th>Serial Number</th>
                                     <th>Description</th>
-                                    <th>Added On</th>
+                                    <th>Added Date</th>
+                                    <th>Action</th>
                                     </tr>
                                 </thead>
 
@@ -214,28 +252,35 @@ nav ul li a {
                                 <?php
                                     foreach($get_item as $item) {
                                 ?>
-                                    <tr id="test">
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox">
+                                        </th>
                                         <th><?= $item['id']; ?></th>
                                         <td><?= $item['item']; ?></td>
-                                        <td>
-                                            <a href="edit.php?id=<?= $item['id']; ?>&action=edit" class="btn btn-warning">
-                                                <svg width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                                </svg>
-                                                Edit
-                                            </a>
-                                            <a href="dashboard.php?id=<?= $item['id']; ?>&action=delete" class="btn btn-danger">
-                                                <svg width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-                                                </svg>
-                                                Delete
-                                            </a>
-                                        </td>
                                         <td><?= $item['count']; ?></td>
-                                        <th><?= $item['s-n']; ?></th>
-                                        <td><?= $item['desc']; ?></td>
+                                        <th><?= $item['s_n']; ?></th>
+                                        <td><p class="text-break"><?= $item['desc']; ?></p></td>
 
                                         <td><h6><?= $item['added_at']; ?></h6></td>
+                                        <td>
+                                            <button class="btn-warning">
+                                                <a href="edit.php?id=<?= $item['id']; ?>&action=edit">
+                                                    <svg width="16" height="16" fill="currentColor" class="bi bi-pencil edit" viewBox="0 0 16 16">
+                                                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                    </svg>
+                                                    Edit
+                                                </a>
+                                            </button>
+                                            <button class="btn-danger">
+                                                <a href="dashboard.php?id=<?= $item['id']; ?>&action=delete">
+                                                    <svg width="16" height="16" fill="currentColor" class="bi bi-trash3-fill delete" viewBox="0 0 16 16">
+                                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                                    </svg>
+                                                    Delete
+                                                </a>
+                                            </button>
+                                        </td>
 
                                     </tr>
                                     <?php 
@@ -281,7 +326,7 @@ nav ul li a {
                                 <br>
                                 <input type="text" class="form-control" name="s_n" placeholder="Enter Serial Number" required>
                                 <br>
-                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3" required>&#10</textarea>
+                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3">&#10</textarea>
                                 <br>
                                 <br>
                                 <div class="input-group">

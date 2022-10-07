@@ -1,6 +1,6 @@
 <?php
 require_once './database/config.php';
-require 'functions.php';
+require './func/functions.php';
 
 session_start();
 
@@ -16,9 +16,9 @@ if(isset($_POST['update'])) {
 	$item = $_POST['item'];
 	$count = $_POST['count'];
 	$desc = $_POST['desc'];
-    $s_n = $_POST['s-n'];
+    $s_n = $_POST['s_n'];
 
-	$query = mysqli_query($con, "UPDATE `items` SET `item`='$item', `count`='$count', `desc`='$desc', `s-n`='$s_n' WHERE `id` = '$id'");
+	$query = mysqli_query($con, "UPDATE `items` SET `item`='$item', `count`='$count', `desc`='$desc', `s_n`='$s_n' WHERE `id` = '$id'");
 
 	header("Location: dashboard.php");
 }
@@ -30,7 +30,7 @@ while($item_data = mysqli_fetch_array($fetch_data)) {
 	$item = $item_data['item'];
 	$count = $item_data['count'];
 	$desc = $item_data['desc'];
-    $s_n = $item_data['s-n'];
+    $s_n = $item_data['s_n'];
 }
 ?>
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ while($item_data = mysqli_fetch_array($fetch_data)) {
     <title>InventorySystem - Edit Item</title>
     <style>
         body {
-            background-color: #343A40;
+            background-color: #fff;
         }
     </style>
 </head>
@@ -62,7 +62,7 @@ while($item_data = mysqli_fetch_array($fetch_data)) {
                         <br>
                         <input type="number" class="form-control" name="count" value="<?php echo $count ?>" required>
                         <br>
-                        <input type="text" class="form-control" name="s-n" value="<?php echo $s_n ?>" required>
+                        <input type="text" class="form-control" name="s_n" value="<?php echo $s_n ?>" required>
                         <br>
                         <textarea style="resize: none;" class="form-control" name="desc" cols="3" rows="3" required><?php echo $desc ?></textarea>
     

@@ -23,7 +23,8 @@ CREATE TABLE `items` (
   `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `item` varchar(255) NOT NULL,
   `count` int(11) NOT NULL,
-  `s-n` varchar(255) NOT NULL UNIQUE,
+  `s_n` varchar(255) NOT NULL UNIQUE,
   `desc` varchar(255) NOT NULL,
-  `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP
+  `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `status` tinyint(1) NOT NULL DEFAULT 1 COMMENT '1=Active | 0=Inactive'
 );

@@ -1,11 +1,12 @@
 <?php
+//change password
 // Initialize the session
 session_start();
  
 // admin access soon
 
 // Include config file
-require_once "./database/config.php";
+require_once "/Applications/MAMP/htdocs/Inv/database/config.php";
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";
