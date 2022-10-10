@@ -148,7 +148,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 ### Installation
 * _For this Project MacOS is used so every step from here on out will be directed to the MacOS users. For installation on any other devices then unix refer to the instructions above_.
 
-#### MacOS
+* #### MacOS
   **1**. Install homebrew from [homebrew](https://brew.sh)
   **2**. Install all necessary programs using brew (Incase you cant run brew as a normal user use `sudo`)
    ```sh
@@ -204,7 +204,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     }
   ```
 * #### MySQL Configuration 
-    <br>
+      <br>
   **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
     Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
@@ -256,16 +256,16 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 * #### PHP Configuration (Optional)  
 
-  <br>
-    **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
-      <br>
-    Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
-      <br>
-    If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
-      <br>
-    ```sh
-    ls -l /usr/local/etc/php
-    ```
+    <br>
+  **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+    <br>
+  Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
+    <br>
+  If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+    <br>
+  ```sh
+  ls -l /usr/local/etc/php
+  ```
 #### Linux
 
 
