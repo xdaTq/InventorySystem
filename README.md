@@ -164,7 +164,7 @@ _Below is an example of how you can instruct your audience on installing and set
         listen       YOUR_PORT;
         server_name  YOUR_SERVERNAME;
         ```
-        <br>
+
         In the `Location /` block change the default `root` to your location and in the Index add the following as shown below
         ```nginx
         root /Users/erwinkujawski/Desktop/Inv;
@@ -179,7 +179,7 @@ _Below is an example of how you can instruct your audience on installing and set
             proxy_busy_buffers_size 256k;
         }
         ```
-        <br>
+        
         In the default config the .\$php will be commented uncomment and change it to the following
         ```nginx
         location ~ \.php$ {
