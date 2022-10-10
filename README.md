@@ -125,13 +125,28 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+* For this project you will need.
+
+
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+For this project `Docker` can be used for simplifying  the installation. Here you can find the Dockerized files from [DockerHub](https://hub.docker.com)
+1. Docker pull IMAGE
   ```sh
-  npm install npm@latest -g
+  $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
   ```
+2. Docker check for IMAGES
+  ```sh
+  $ Docker images
+  ```
+3. Docker running the app in a `container`
+  ```sh
+  $ Docker run --name CONTAINER_NAME -p PORT:PORT APP_NAME
+  ```
+  * If you want to check what containers are running, use the command below
+    ```sh
+    $ Docker ps
+    ```
 
 ### Installation
 
@@ -141,18 +156,18 @@ _Below is an example of how you can instruct your audience on installing and set
 
 #### MacOS
 1. Install homebrew from [homebrew](https://brew.sh)
-2. Install all necessary programs using brew
+2. Install all necessary programs using brew (Incase you cant run brew as a normal user use `sudo`)
    ```sh
-   brew install php
+   $ brew install php
    ```
    ```sh
-   brew install mysql
+   $ brew install mysql
    ```
    ```sh
-   brew install telnet
+   $ brew install telnet
    ```
    ```sh
-   brew install nginx
+   $ brew install nginx
    ```
     * Nginx onfiguration <br>
       3. On MacOS with a Silicone Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
