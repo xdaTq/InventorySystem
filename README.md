@@ -105,7 +105,7 @@ Use the `BLANK_README.md` to get started.
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
+* [![Nginx][Nginx.com]][Nginx-url]
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Php][Php.net]][Php-url]
@@ -251,8 +251,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+[Nginx.com]: https://img.shields.io/badge/Nginx-20232A?style=for-the-badge&logo=Nginx&logoColor=61DAFB
+[Nginx-url]: https://nginx.com/
 [Mysql.com]: https://img.shields.io/badge/Mysql-DD0031?style=for-the-badge&logo=mysql&logoColor=white
 [Mysql-url]: https://angular.io/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
