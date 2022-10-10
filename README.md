@@ -25,7 +25,6 @@
 [![MIT License][license-shield]][license-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -80,9 +79,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Inventory system created to track your inventory and supply, <br>
+To get started go to <a href="#getting-started">Getting started</a>
+For more inforamtion about the usage go to <a href="#usage">Usage</a>
+If your intrested what the project is built with go to <a href="#built-with">Usage</a>
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
