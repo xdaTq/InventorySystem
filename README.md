@@ -207,7 +207,7 @@ _Below is an example of how you can instruct your audience on installing and set
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
       6. In the `my.conf` file change the following configuration to the following.
-      ```conf
+      ```nginx
       [mysqld]
 
       bind-address            = 127.0.0.1
@@ -223,10 +223,10 @@ _Below is an example of how you can instruct your audience on installing and set
       7. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. <br>
-        If u want to see all of the users use the command below in the `/opt/homebrew/etc/`
-          ```sh
-            $ ls -l /usr/local/etc/php
-          ```
+        If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+      ```sh
+      $ ls -l /usr/local/etc/php
+      ```
 
 
     
