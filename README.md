@@ -255,7 +255,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [Nginx.com]: https://img.shields.io/badge/Nginx-20232A?style=for-the-badge&logo=Nginx&logoColor=039138
 [Nginx-url]: https://nginx.com/
 [Mysql.com]: https://img.shields.io/badge/Mysql-02758f?style=for-the-badge&logo=mysql&logoColor=f29111
-[Mysql-url]: https://angular.io/
+[Mysql-url]: https://mysql.com/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [Php.net]: https://img.shields.io/badge/Php-0769AD?style=for-the-badge&logo=php&logoColor=white
