@@ -210,7 +210,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-[Owner](https://github/xdaTq/)
+[Owner](https://github/xdaTq/) - xdaTq
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
