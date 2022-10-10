@@ -157,7 +157,13 @@ _Below is an example of how you can instruct your audience on installing and set
     * Nginx onfiguration <br>
       3. On MacOS with a Silicone Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
-        Inside this directory navigate to a folder called nginx, and open the nginx.conf file with a editor of your choice.
+        Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
+      4. Nginx.conf file <br>
+        In the `nginx.conf` file change the following configuration to this one.
+        ```nginx
+        listen       YOUR_PORT;
+        server_name  YOUR_SERVERNAME;
+        ```
 #### Linux
 
 
