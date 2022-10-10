@@ -249,9 +249,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[Nginx.com]: https://img.shields.io/badge/Nginx-20232A?style=for-the-badge&logo=Nginx&logoColor=61DAFB
+[Apache.js]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=white
+[Apache-url]: https://apache.org/
+[Nginx.com]: https://img.shields.io/badge/Nginx-20232A?style=for-the-badge&logo=Nginx&logoColor=039138
 [Nginx-url]: https://nginx.com/
 [Mysql.com]: https://img.shields.io/badge/Mysql-DD0031?style=for-the-badge&logo=mysql&logoColor=white
 [Mysql-url]: https://angular.io/
