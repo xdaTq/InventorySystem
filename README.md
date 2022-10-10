@@ -201,15 +201,17 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
             include        fastcgi_params;
         }
         ```
-    * MySQL Configuration 
+  * #### MySQL Configuration 
       <br>
   **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
   **6**. In the `my.conf` file change the following configuration to the following. 
       <br>
-         Note: The default IP for hosting localy is `127.0.0.1`
+        Note: The default IP for hosting localy is `127.0.0.1`
+
         ```nginx
+
         [mysqld]
 
         bind-address            = SERVER_IP
@@ -221,13 +223,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         character-set-client-handshake = false
         ```
   **7**. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
-        ```sql
-          $ mysql -u root -p
-        ```
+    ```sql
+      $ mysql -u root -p
+    ```
   **8**. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
-      
       ![database-screenshot][database-screenshot]  
-
       If you see this prompt with MySQL in you terminal that means your now connected as the database.  
       Note: To display all of the existing databases type in the following `query` as shown below.
 
@@ -248,13 +248,15 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     ```sql
       mysql database_name < db.sql;
     ``` 
-    * PHP Configuration (Optional)
+    * #### PHP Configuration (Optional)  
+
     <br>
   **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
       <br>
         If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+      <br>
       ```sh
       $ ls -l /usr/local/etc/php
       ```
