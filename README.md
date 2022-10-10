@@ -294,7 +294,7 @@ Use this space to show useful examples of how a project can be used. Additional 
   The main pupose of this project is to create an app to keep track of inventory and supply.
   For example how many pens you have to how many chairs you have, it can be uses for any possible scenario of keeping track of supply & inventory.
 
-![adding-items][adding-items] 
+  ![adding-items][adding-items] 
 * ###### How to use
   - Creating Item
     After creating an account you simply log in and in the dashboard menu you should see a `+ Add Items` button you can interact with it but simply clicking it, you should see a popup window where you can type in your item information and submit it to the database which is display directly on the dashboard.
