@@ -241,18 +241,18 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```
   **9**.
   Creating the database. type in the following `query` as shown below to create a database.
-    ```sh
-      CREATE DATABASE database_name;
-    ```
+  ```sh
+  CREATE DATABASE database_name;
+  ```
   After inserting this `query` use the following `query` to see if the database was created.
-    ```sh
-      SHOW DATABASES;
-    ```
+  ```sh
+  SHOW DATABASES;
+  ```
   **10**.
   Inserting the database. type in the following `query` in the mysql terminal.
-    ```sh
-      mysql database_name < db.sql;
-    ``` 
+  ```sh
+  mysql database_name < db.sql;
+  ``` 
 
   * #### PHP Configuration (Optional)  
 
@@ -263,9 +263,9 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     <br>
   If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
     <br>
-    ```sh
-      ls -l /usr/local/etc/php
-    ```
+  ```sh
+  ls -l /usr/local/etc/php
+  ```
 #### Linux
 
 
