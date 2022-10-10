@@ -256,6 +256,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
       <br>
       If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+      <br>
       ```sh
         ls -l /usr/local/etc/php
       ```
