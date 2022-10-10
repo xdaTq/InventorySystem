@@ -128,15 +128,15 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 ### Prerequisites
 
 For this project `Docker` can be used for simplifying  the installation. Here you can find the Dockerized files from [DockerHub](https://hub.docker.com)
-1. Docker pull IMAGE
+**1**. Docker pull IMAGE
   ```sh
   $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
   ```
-2. docker check for IMAGES
+**2**. docker check for IMAGES
   ```sh
   $ docker images
   ```
-3. docker running the app in a `container`
+**3**. docker running the app in a `container`
   ```sh
   $ docker run --name CONTAINER_NAME -p PORT:PORT APP_NAME
   ```
