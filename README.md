@@ -82,26 +82,28 @@
 [![Product Name Screen Shot][product-screenshot]]
 
 Inventory system created to track your inventory and supply, <br>
-To get started go to <a href="#getting-started">Getting started</a>
-For more inforamtion about the usage go to <a href="#usage">Usage</a>
-If your intrested what the project is built with go to <a href="#built-with">Usage</a>
+To get started go to <a href="#getting-started">Getting started</a>.
+For more inforamtion about the usage go to <a href="#usage">Usage</a>,
+if your intrested what the project is built with go to <a href="#built-with">Usage</a>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+prior knowledge:
+* For better understanding of this project you should have a decent experiance using PHP as well as MySQL.
+* For better understanding of the hosting type and serving this project you should have decent expierance in nginx or apache or really any other type of web server
+* For more info about forking this project go to <a href="#">Fork</a>
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+What the project is served on? <br>
+For the hosting of this project you can use, for example (MAMP, XAMMP) or any other type of web server for more inforamtion about what we used for the hosting and serving this project go to <a href="#built-with">Usage</a>
 
-Use the `BLANK_README.md` to get started.
+Use the `README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project was built using these technologies. Feels free to add any or change any of these technilogies below to suit your usage like frameworks for front-end as well as back-end.
+
+For more information about <a href="#usage">Usage</a> or <a href="#getting-started">Getting started</a>.
 
 * [![Apache][Apache.org]][Apache-url]
 * [![Nginx][Nginx.com]][Nginx-url]
