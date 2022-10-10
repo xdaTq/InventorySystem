@@ -135,17 +135,17 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```sh
   $ docker pull [OPTIONS] NAME[:TAG|@DIGEST]
   ```
-2. Docker check for IMAGES
+2. docker check for IMAGES
   ```sh
-  $ Docker images
+  $ docker images
   ```
-3. Docker running the app in a `container`
+3. docker running the app in a `container`
   ```sh
-  $ Docker run --name CONTAINER_NAME -p PORT:PORT APP_NAME
+  $ docker run --name CONTAINER_NAME -p PORT:PORT APP_NAME
   ```
   * If you want to check what containers are running, use the command below
     ```sh
-    $ Docker ps
+    $ docker ps
     ```
 
 ### Installation
