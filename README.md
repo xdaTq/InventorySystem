@@ -169,7 +169,8 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    $ brew install nginx
    ```
-    * Nginx Configuration <br>
+    * Nginx Configuration 
+      <br>
       3. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
         Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
@@ -204,7 +205,8 @@ _Below is an example of how you can instruct your audience on installing and set
             include        fastcgi_params;
         }
         ```
-    * MySQL Configuration <br>
+    * MySQL Configuration 
+      <br>
       5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
