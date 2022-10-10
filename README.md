@@ -154,10 +154,10 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    brew install nginx
    ```
-* Configuration
-   ```sh
-   npm install
-   ```
+      * Configuration
+        ```sh
+        npm install
+        ```
 #### Linux
 
 
