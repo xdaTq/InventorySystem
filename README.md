@@ -248,7 +248,8 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     ```sql
       mysql database_name < db.sql;
     ``` 
-    * #### PHP Configuration (Optional)  
+
+  * #### PHP Configuration (Optional)  
 
     <br>
   **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
