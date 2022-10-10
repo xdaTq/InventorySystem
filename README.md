@@ -207,21 +207,21 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
       6. In the `my.conf` file change the following configuration to the following. <br>
          Note: The default IP for hosting localy is `127.0.0.1`
-      ```nginx
-      [mysqld]
+        ```nginx
+        [mysqld]
 
-      bind-address            = SERVER_IP
-      mysqlx-bind-address     = SERVER_IP
-      socket                  = /tmp/mysql.sock
+        bind-address            = SERVER_IP
+        mysqlx-bind-address     = SERVER_IP
+        socket                  = /tmp/mysql.sock
 
-      character-set-server    = utf8mb4
-      collation-server        = utf8mb4_unicode_ci
-      character-set-client-handshake = false
-      ```
+        character-set-server    = utf8mb4
+        collation-server        = utf8mb4_unicode_ci
+        character-set-client-handshake = false
+        ```
       7. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
-      ```sql
-        $ mysql -u root -p
-      ```
+        ```sql
+          $ mysql -u root -p
+        ```
       8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
       
       ![database-screenshot][database-screenshot]  
@@ -229,9 +229,9 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       If you see this prompt with MySQL in you terminal that means your now connected as the database.  
       Note: To display all of the existing databases type in the following query as shown below.
 
-      ```sh
-        SHOW DATABASES;
-      ```
+        ```sh
+          SHOW DATABASES;
+        ```
       9.
 
     * PHP Configuration (Optional)
