@@ -165,14 +165,16 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
    ```sh
    $ brew install nginx
    ```
-    * Nginx Configuration 
+* #### Nginx Configuration 
 
-
-  **3**. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
+  **3**. 
+  On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
   
   Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
 
-  **4**. Nginx.conf file In the `nginx.conf` file change the following configuration to the following.
+  **4**. 
+  Nginx.conf file In the `nginx.conf` file change the following configuration to the following.
+
   ```sh
     listen       YOUR_PORT;
     server_name  YOUR_SERVERNAME;
@@ -207,11 +209,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```
 * #### MySQL Configuration 
   
-  **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+  **5**. 
+  On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
 
-  Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
-  
   **6**. 
+  Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
   In the `my.conf` file change the following configuration to the following. 
 
   Note: The default IP for hosting localy is `127.0.0.1`
@@ -229,7 +231,8 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   character-set-client-handshake = false
   ```
 
-  **7**. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
+  **7**. 
+  Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
 
   ```sh
     mysql -u root -p
