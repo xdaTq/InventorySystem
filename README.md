@@ -145,7 +145,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     ```
 
 ### Installation
-* _.For this Project MacOS is used so every step from here on out will be directed to the MacOS users. For installation on any other devices then unix refer to the instructions above_.
+* _For this Project MacOS is used so every step from here on out will be directed to the MacOS users. For installation on any other devices then unix refer to the instructions above_.
 
 #### MacOS
 1. Install homebrew from [homebrew](https://brew.sh)
