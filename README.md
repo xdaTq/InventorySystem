@@ -122,11 +122,7 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-* For this project you will need.
-
+* Setting up the project with Docker.
 
 ### Prerequisites
 
@@ -207,7 +203,6 @@ _Below is an example of how you can instruct your audience on installing and set
         ```
     * MySQL Configuration 
       <br>
-      <br>
       5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
@@ -223,6 +218,16 @@ _Below is an example of how you can instruct your audience on installing and set
       collation-server        = utf8mb4_unicode_ci
       character-set-client-handshake = false
       ```
+    * PHP Configuration
+      <br>
+      7. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+      <br>
+        Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. <br>
+        If u want to see all of the users use the command below in the `/opt/homebrew/etc/`
+          ```sh
+            $ ls -l /usr/local/etc/php
+          ```
+
 
     
       
