@@ -232,6 +232,9 @@ For any further development help go to <a href="https://github.com/xdaTq/Invento
 * [MySQL Documentation](https://dev.mysql.com/doc/)
 * [Bootstrap Documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
+* [StackOverflow](https://stackoverflow.com)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
