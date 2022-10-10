@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/xdaTq/InventorySystem">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -38,14 +38,12 @@
   <p align="center">
     Inventory system to keep track of inventory and supply!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/xdaTq/InventorySystem"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/xdaTq/InventorySystem/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/xdaTq/InventorySystem/issues">Request Feature</a>
   </p>
 </div>
 
