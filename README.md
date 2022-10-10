@@ -222,13 +222,21 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       ```sql
         $ mysql -u root -p
       ```
-      8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default.
+      8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
+      
+      ![database-screenshot][database-screenshot]  
+
+      If you see this prompt with MySQL in you terminal that means your now connected as the database.  
+      Note: To display all of the existing databases type in the following query as shown below.
+
       ```sh
-        
+        SHOW DATABASES;
       ```
+      9.
+
     * PHP Configuration (Optional)
       <br>
-      8. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+      12. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. <br>
         If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
@@ -340,7 +348,10 @@ For any further development help go to <a href="https://github.com/xdaTq/Invento
 [issues-url]: https://github.com/xdaTq/InventorySystem/issues
 [license-shield]: https://img.shields.io/github/license/xdaTq/InventorySystem.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+
+<!-- screen shots -->
 [product-screenshot]: img/screenshot.png
+[database-screenshot]: img/database.png
 <!-- Built with --->
 [Apache.org]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=c92038
 [Apache-url]: https://apache.org/
