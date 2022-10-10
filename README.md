@@ -192,10 +192,11 @@ _Below is an example of how you can instruct your audience on installing and set
         }
         ```
         
-        In the default config the `.\$php` will be commented uncomment and change it to the following
+        In the default config the `.\$php` will be commented uncomment and change it to the following.<br>
+        Note: The default IP for hosting localy is `127.0.0.1`
         ```nginx
         location ~ \.php$ {
-            fastcgi_pass   SERVER_IP:PORT; //default is 127.0.0.1
+            fastcgi_pass   SERVER_IP:PORT;
             fastcgi_index  index.php;
             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
             include        fastcgi_params;
@@ -206,7 +207,8 @@ _Below is an example of how you can instruct your audience on installing and set
       5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
-      6. In the `my.conf` file change the following configuration to the following.
+      6. In the `my.conf` file change the following configuration to the following. <br>
+         Note: The default IP for hosting localy is `127.0.0.1`
       ```nginx
       [mysqld]
 
