@@ -293,6 +293,8 @@ Use this space to show useful examples of how a project can be used. Additional 
 * ###### Purpose
   The main pupose of this project is to create an app to keep track of inventory and supply.
   For example how many pens you have to how many chairs you have, it can be uses for any possible scenario of keeping track of supply & inventory.
+
+![adding-items][adding-items] 
 * ###### How to use
   - Creating Item
     After creating an account you simply log in and in the dashboard menu you should see a `+ Add Items` button you can interact with it but simply clicking it, you should see a popup window where you can type in your item information and submit it to the database which is display directly on the dashboard.
@@ -394,6 +396,8 @@ For any further development help go to <a href="https://github.com/xdaTq/Invento
 <!-- screen shots -->
 [product-screenshot]: img/screenshot.png
 [database-screenshot]: img/database.png
+
+[adding-items]: img/adding-items.gif
 <!-- Built with --->
 [Apache.org]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=c92038
 [Apache-url]: https://apache.org/
