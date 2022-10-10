@@ -139,7 +139,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 * For this Project we use a MacBook with Silicon Proccesor. So every Installation for windows and other will be linked below.
 
-# MacOS
+#### MacOS
 1. Install homebrew from [homebrew](https://brew.sh)
 2. Install all necessary programs using brew
    ```sh
@@ -158,7 +158,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-# Linux
+#### Linux
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
