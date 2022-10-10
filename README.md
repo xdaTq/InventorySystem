@@ -169,12 +169,12 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    $ brew install nginx
    ```
-    * Nginx onfiguration <br>
-      3. On MacOS with a Silicone Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
+    * Nginx Configuration <br>
+      3. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
         Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
       4. Nginx.conf file <br>
-        In the `nginx.conf` file change the following configuration to this one.
+        In the `nginx.conf` file change the following configuration to the following.
         ```nginx
         listen       YOUR_PORT;
         server_name  YOUR_SERVERNAME;
@@ -204,6 +204,24 @@ _Below is an example of how you can instruct your audience on installing and set
             include        fastcgi_params;
         }
         ```
+    * [Mysql]MySQL Configuration <br>
+      5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+      <br>
+        Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
+      6. In the `my.conf` file change the following configuration to the following.
+      ```conf
+      [mysqld]
+
+      bind-address            = 127.0.0.1
+      mysqlx-bind-address     = 127.0.0.1
+      socket                  = /tmp/mysql.sock
+
+      character-set-server    = utf8mb4
+      collation-server        = utf8mb4_unicode_ci
+      character-set-client-handshake = false
+      ```
+
+    
       
 #### Linux
 
@@ -220,7 +238,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
