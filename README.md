@@ -151,6 +151,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 * #### MacOS
   **1**. Install homebrew from [homebrew](https://brew.sh)
+
   **2**. Install all necessary programs using brew (Incase you cant run brew as a normal user use `sudo`)
    ```sh
    $ brew install php
@@ -168,7 +169,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 
   **3**. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
-    <br>
+  
   Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
 
   **4**. Nginx.conf file In the `nginx.conf` file change the following configuration to the following.
@@ -205,13 +206,13 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     }
   ```
 * #### MySQL Configuration 
-      <br>
+  
   **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
-      <br>
-    Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
+
+  Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
   **6**. In the `my.conf` file change the following configuration to the following. 
-      <br>
-    Note: The default IP for hosting localy is `127.0.0.1`
+
+  Note: The default IP for hosting localy is `127.0.0.1`
 
     ```sh
 
@@ -230,7 +231,9 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```sh
     mysql -u root -p
   ```
-  **8**. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this. 
+
+  **8**. 
+  If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this. 
 
   ![database-screenshot][database-screenshot] 
 
@@ -240,6 +243,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```sh
     SHOW DATABASES;
   ```
+
   **9**.
   Creating the database. type in the following `query` as shown below to create a database.
   ```sh
@@ -249,6 +253,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```sh
   SHOW DATABASES;
   ```
+
   **10**.
   Inserting the database. type in the following `query` in the mysql terminal.
   ```sh
@@ -257,13 +262,13 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 * #### PHP Configuration (Optional)  
 
-    <br>
-  **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
-    <br>
+  **12**. 
+  On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+
   Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
-    <br>
+
   If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
-    <br>
+  
   ```sh
   ls -l /usr/local/etc/php
   ```
