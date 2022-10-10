@@ -207,6 +207,7 @@ _Below is an example of how you can instruct your audience on installing and set
         ```
     * MySQL Configuration 
       <br>
+      <br>
       5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
