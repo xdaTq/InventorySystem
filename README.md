@@ -164,42 +164,45 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
    $ brew install nginx
    ```
     * Nginx Configuration 
-      <br>
+
+
   **3**. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
         Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
   **4**. Nginx.conf file 
-      <br>
         In the `nginx.conf` file change the following configuration to the following.
+
         ```nginx
-        listen       YOUR_PORT;
-        server_name  YOUR_SERVERNAME;
+          listen       YOUR_PORT;
+          server_name  YOUR_SERVERNAME;
         ```
+        
+        In the `Location /` block change the default `root` to your location and in the Index add the following as shown below.
 
-        In the `Location /` block change the default `root` to your location and in the Index add the following as shown below
         ```nginx
-        root /Users/erwinkujawski/Desktop/Inv;
-        index index.html index.htm index.php;
+          root /Users/erwinkujawski/Desktop/Inv;
+          index index.html index.htm index.php;
 
-        location / {
-            autoindex on;
-            try_files $uri $uri/ /index.php?$args;
+          location / {
+              autoindex on;
+              try_files $uri $uri/ /index.php?$args;
 
-            proxy_buffer_size 128k;
-            proxy_buffers 4 256k;
-            proxy_busy_buffers_size 256k;
-        }
+              proxy_buffer_size 128k;
+              proxy_buffers 4 256k;
+              proxy_busy_buffers_size 256k;
+          }
         ```
         
         In the default config the `.\$php` will be commented uncomment and change it to the following.<br>
-        Note: The default IP for hosting localy is `127.0.0.1`
+        Note: The default IP for hosting localy is `127.0.0.1`.
+
         ```nginx
-        location ~ \.php$ {
-            fastcgi_pass   SERVER_IP:PORT;
-            fastcgi_index  index.php;
-            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-            include        fastcgi_params;
-        }
+          location ~ \.php$ {
+              fastcgi_pass   SERVER_IP:PORT;
+              fastcgi_index  index.php;
+              fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+              include        fastcgi_params;
+          }
         ```
   * #### MySQL Configuration 
       <br>
