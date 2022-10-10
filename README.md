@@ -248,7 +248,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
     ```sh
       SHOW DATABASES;
     ```
-  **10**
+  **10**.
   Inserting the database. type in the following `query` in the mysql terminal.
     ```sh
       mysql database_name < db.sql;
@@ -258,16 +258,14 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
     <br>
   **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
-      <br>
-        Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
-      <br>
-      If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
-      <br>
-      ```sh
-
-        ls -l /usr/local/etc/php
-        
-      ```
+    <br>
+  Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
+    <br>
+  If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+    <br>
+    ```sh
+      ls -l /usr/local/etc/php
+    ```
 #### Linux
 
 
