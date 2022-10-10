@@ -167,88 +167,90 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 
   **3**. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
-      <br>
-        Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
-  **4**. Nginx.conf file 
-        In the `nginx.conf` file change the following configuration to the following.
+    <br>
+  Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
 
-        ```nginx
-          listen       YOUR_PORT;
-          server_name  YOUR_SERVERNAME;
-        ```
+  **4**. Nginx.conf file In the `nginx.conf` file change the following configuration to the following.
+  ```sh
+    listen       YOUR_PORT;
+    server_name  YOUR_SERVERNAME;
+  ```
         
-        In the `Location /` block change the default `root` to your location and in the Index add the following as shown below.
+  In the `Location /` block change the default `root` to your location and in the Index add the following as shown below.
 
-        ```nginx
-          root /Users/erwinkujawski/Desktop/Inv;
-          index index.html index.htm index.php;
+  ```sh
+    root /Users/erwinkujawski/Desktop/Inv;
+    index index.html index.htm index.php;
 
-          location / {
-              autoindex on;
-              try_files $uri $uri/ /index.php?$args;
+    location / {
+      autoindex on;
+      try_files $uri $uri/ /index.php?$args;
 
-              proxy_buffer_size 128k;
-              proxy_buffers 4 256k;
-              proxy_busy_buffers_size 256k;
-          }
-        ```
+      proxy_buffer_size 128k;
+      proxy_buffers 4 256k;
+      proxy_busy_buffers_size 256k;
+    }
+  ```
         
-        In the default config the `.\$php` will be commented uncomment and change it to the following.<br>
-        Note: The default IP for hosting localy is `127.0.0.1`.
+  In the default config the `.\$php` will be commented uncomment and change it to the following.<br>
+  Note: The default IP for hosting localy is `127.0.0.1`.
 
-        ```nginx
-          location ~ \.php$ {
-              fastcgi_pass   SERVER_IP:PORT;
-              fastcgi_index  index.php;
-              fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-              include        fastcgi_params;
-          }
-        ```
+  ```sh
+    location ~ \.php$ {
+      fastcgi_pass   SERVER_IP:PORT;
+      fastcgi_index  index.php;
+      fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+      include        fastcgi_params;
+    }
+  ```
   * #### MySQL Configuration 
       <br>
   **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
-        Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
+    Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
   **6**. In the `my.conf` file change the following configuration to the following. 
       <br>
-        Note: The default IP for hosting localy is `127.0.0.1`
+    Note: The default IP for hosting localy is `127.0.0.1`
 
-        ```nginx
+    ```sh
 
-        [mysqld]
+      [mysqld]
 
-        bind-address            = SERVER_IP
-        mysqlx-bind-address     = SERVER_IP
-        socket                  = /tmp/mysql.sock
+      bind-address            = SERVER_IP
+      mysqlx-bind-address     = SERVER_IP
+      socket                  = /tmp/mysql.sock
 
-        character-set-server    = utf8mb4
-        collation-server        = utf8mb4_unicode_ci
-        character-set-client-handshake = false
-        ```
-  **7**. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
-    ```sql
-      $ mysql -u root -p
+      character-set-server    = utf8mb4
+      collation-server        = utf8mb4_unicode_ci
+      character-set-client-handshake = false
     ```
-  **8**. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
-      ![database-screenshot][database-screenshot]  
-      If you see this prompt with MySQL in you terminal that means your now connected as the database.  
-      Note: To display all of the existing databases type in the following `query` as shown below.
+  **7**. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
 
-        ```sql
-          SHOW DATABASES;
-        ```
+  ```sh
+    mysql -u root -p
+  ```
+  **8**. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this. 
+
+  ![database-screenshot][database-screenshot] 
+
+  If you see this prompt with MySQL in you terminal that means your now connected as the database.  
+  Note: To display all of the existing databases type in the following `query` as shown below.
+
+  ```sh
+    SHOW DATABASES;
+  ```
   **9**.
   Creating the database. type in the following `query` as shown below to create a database.
-    ```sql
+    ```sh
       CREATE DATABASE database_name;
     ```
   After inserting this `query` use the following `query` to see if the database was created.
-    ```sql
+    ```sh
       SHOW DATABASES;
     ```
   **10**
   Inserting the database. type in the following `query` in the mysql terminal.
-    ```sql
+    ```sh
       mysql database_name < db.sql;
     ``` 
 
@@ -262,7 +264,9 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
       <br>
       ```sh
+
         ls -l /usr/local/etc/php
+        
       ```
 #### Linux
 
