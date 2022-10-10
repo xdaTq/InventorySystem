@@ -79,7 +79,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
+![Product Name Screen Shot][product-screenshot]
 
 Inventory system created to track your inventory and supply, <br>
 To get started go to <a href="#getting-started">Getting started</a>.
@@ -89,7 +89,8 @@ if your intrested what the project is built with go to <a href="#built-with">Usa
 prior knowledge:
 * For better understanding of this project you should have a decent experiance using PHP as well as MySQL.
 * For better understanding of the hosting type and serving this project you should have decent expierance in nginx or apache or really any other type of web server
-* For more info about forking this project go to <a href="#">Fork</a>
+* For more information about forking this project go to <a href="#">Fork</a>
+* For more information about contributing go to <a href="#contributing">Contributing</a>
 
 What the project is served on? <br>
 For the hosting of this project you can use, for example (MAMP, XAMMP) or any other type of web server for more inforamtion about what we used for the hosting and serving this project go to <a href="#built-with">Usage</a>
@@ -166,14 +167,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Add More Features
+- [ ] Add Additional Documentation Page
+- [ ] Add Proper Admin Page
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/xdaTq/InventorySystem/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
