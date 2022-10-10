@@ -218,9 +218,17 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       collation-server        = utf8mb4_unicode_ci
       character-set-client-handshake = false
       ```
-    * PHP Configuration
+      7. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
+      ```sql
+        $ mysql -u root -p
+      ```
+      8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default.
+      ```sh
+        
+      ```
+    * PHP Configuration (Optional)
       <br>
-      7. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+      8. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. <br>
         If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
