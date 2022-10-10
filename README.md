@@ -149,8 +149,8 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 * _For this Project MacOS is used so every step from here on out will be directed to the MacOS users. For installation on any other devices then unix refer to the instructions above_.
 
 #### MacOS
-1. Install homebrew from [homebrew](https://brew.sh)
-2. Install all necessary programs using brew (Incase you cant run brew as a normal user use `sudo`)
+  **1**. Install homebrew from [homebrew](https://brew.sh)
+  **2**. Install all necessary programs using brew (Incase you cant run brew as a normal user use `sudo`)
    ```sh
    $ brew install php
    ```
@@ -165,10 +165,10 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
    ```
     * Nginx Configuration 
       <br>
-3. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
+  **3**. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
         Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
-4. Nginx.conf file 
+  **4**. Nginx.conf file 
       <br>
         In the `nginx.conf` file change the following configuration to the following.
         ```nginx
@@ -203,10 +203,10 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         ```
     * MySQL Configuration 
       <br>
-  5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+  **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
-  6. In the `my.conf` file change the following configuration to the following. 
+  **6**. In the `my.conf` file change the following configuration to the following. 
       <br>
          Note: The default IP for hosting localy is `127.0.0.1`
         ```nginx
@@ -220,11 +220,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         collation-server        = utf8mb4_unicode_ci
         character-set-client-handshake = false
         ```
-  7. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
+  **7**. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
         ```sql
           $ mysql -u root -p
         ```
-  8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
+  **8**. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
       
       ![database-screenshot][database-screenshot]  
 
@@ -234,7 +234,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         ```sh
           SHOW DATABASES;
         ```
-  9.
+  **9**.
 
     * PHP Configuration (Optional)
       <br>
