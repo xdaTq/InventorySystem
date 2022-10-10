@@ -28,9 +28,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+    <!-- optional logo
   <a href="https://github.com/xdaTq/InventorySystem">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
+  -->
 
   <h3 align="center">Inventory System</h3>
 
