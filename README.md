@@ -114,6 +114,7 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 * [![Nginx][Nginx.com]][Nginx-url]
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Jenkins][Jenkins.io]][Jenkins-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -344,4 +345,6 @@ For any further development help go to <a href="https://github.com/xdaTq/Invento
 [Php.net]: https://img.shields.io/badge/Php-0769AD?style=for-the-badge&logo=php&logoColor=white
 [Php-url]: https://www.php.net
 [Docker.com]: https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white
-[Docker-url]: https://www.docker.com 
+[Docker-url]: https://www.docker.com
+[Jenkins.io]: https://img.shields.io/badge/Jenkins-2496ed?style=for-the-badge&logo=jenkins&logoColor=white
+[Jenkins-url]: https://www.jenkins.io 
