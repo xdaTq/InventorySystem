@@ -203,8 +203,8 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       include        fastcgi_params;
     }
   ```
-  * #### MySQL Configuration 
-      <br>
+* #### MySQL Configuration 
+    <br>
   **5**. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
     Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
@@ -254,18 +254,18 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   mysql database_name < db.sql;
   ``` 
 
-  * #### PHP Configuration (Optional)  
+* #### PHP Configuration (Optional)  
 
-    <br>
-  **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
-    <br>
-  Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
-    <br>
-  If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
-    <br>
-  ```sh
-  ls -l /usr/local/etc/php
-  ```
+  <br>
+    **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+      <br>
+    Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
+      <br>
+    If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
+      <br>
+    ```sh
+    ls -l /usr/local/etc/php
+    ```
 #### Linux
 
 
