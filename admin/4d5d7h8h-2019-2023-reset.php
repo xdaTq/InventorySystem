@@ -6,7 +6,8 @@ session_start();
 // admin access soon
 
 // Include config
-require_once "/database/config.php";
+require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
+require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";

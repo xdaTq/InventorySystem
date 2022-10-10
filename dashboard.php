@@ -1,6 +1,6 @@
 <?php
-require_once "./database/config.php";
-require './func/functions.php';
+require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
+require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page

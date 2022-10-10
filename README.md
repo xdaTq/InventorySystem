@@ -243,7 +243,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/xdaTq/InventorySystem/issues
 [license-shield]: https://img.shields.io/github/license/xdaTq/InventorySystem.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: img/screenshot.png
 <!-- Built with --->
 [Apache.org]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=c92038
 [Apache-url]: https://apache.org/

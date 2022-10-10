@@ -1,7 +1,8 @@
 <?php
 // create account
 // Include config file
-require_once "/database/config.php";
+require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
+require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
 
 // admin access
 
@@ -85,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: /Inv/index.php");
+                header("location: /Users/erwinkujawski/Desktop/Inv/index.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
