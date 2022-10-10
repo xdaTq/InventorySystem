@@ -148,7 +148,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-* For this Project we use a MacBook with Silicon Proccesor. So every Installation for windows and other will be linked below.
+* For this Project MacOS is used so every step from here on out will be directed to the MacOS users. For installation on any other devices then unix refer to the instructions above.
 
 #### MacOS
 1. Install homebrew from [homebrew](https://brew.sh)
