@@ -218,11 +218,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         collation-server        = utf8mb4_unicode_ci
         character-set-client-handshake = false
         ```
-      7. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
+  7. Next step is to login to the database as root. in the terminal type in the following command. after typing in this command the terminal will prompt you with a message to type in your password and sicnce this is a newly created MySQL Database the password will be empty so dont type in anything simply press `Enter` and procced to the next step.
         ```sql
           $ mysql -u root -p
         ```
-      8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
+  8. If for some reason step `7.` didn't work and you got an `Error` that says something like `Access denied for user 'root@localhost' (using password: NO)` try using the same command and simply type in the password as `root` some times MySQL sets the password as `root` for default. Else if you everything worked out you should see something like this.  
       
       ![database-screenshot][database-screenshot]  
 
@@ -232,7 +232,7 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         ```sh
           SHOW DATABASES;
         ```
-      9.
+  9.
 
     * PHP Configuration (Optional)
       <br>
