@@ -180,7 +180,7 @@ _Below is an example of how you can instruct your audience on installing and set
         }
         ```
         
-        In the default config the .\$php will be commented uncomment and change it to the following
+        In the default config the `.\$php` will be commented uncomment and change it to the following
         ```nginx
         location ~ \.php$ {
             fastcgi_pass   127.0.0.1:9000;
