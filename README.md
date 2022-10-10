@@ -195,7 +195,7 @@ _Below is an example of how you can instruct your audience on installing and set
         In the default config the `.\$php` will be commented uncomment and change it to the following
         ```nginx
         location ~ \.php$ {
-            fastcgi_pass   127.0.0.1:9000;
+            fastcgi_pass   SERVER_IP:PORT; //default is 127.0.0.1
             fastcgi_index  index.php;
             fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
             include        fastcgi_params;
@@ -210,8 +210,8 @@ _Below is an example of how you can instruct your audience on installing and set
       ```nginx
       [mysqld]
 
-      bind-address            = 127.0.0.1
-      mysqlx-bind-address     = 127.0.0.1
+      bind-address            = SERVER_IP
+      mysqlx-bind-address     = SERVER_IP
       socket                  = /tmp/mysql.sock
 
       character-set-server    = utf8mb4
