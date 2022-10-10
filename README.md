@@ -108,11 +108,12 @@ This project was built using these technologies. Feels free to add any or change
 
 For more information about <a href="#usage">Usage</a> or <a href="#getting-started">Getting started</a>.
 
+* [![Php][Php.net]][Php-url]
+* [![Docker][Docker.com]][Docker-url]
 * [![Apache][Apache.org]][Apache-url]
 * [![Nginx][Nginx.com]][Nginx-url]
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Php][Php.net]][Php-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,4 +259,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [Php.net]: https://img.shields.io/badge/Php-0769AD?style=for-the-badge&logo=php&logoColor=white
-[Php-url]: https://www.php.net 
+[Php-url]: https://www.php.net
+[Docker.com]: https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com 
