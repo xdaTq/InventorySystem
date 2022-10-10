@@ -155,7 +155,7 @@ _Below is an example of how you can instruct your audience on installing and set
    brew install nginx
    ```
     * Configuration <br>
-      3. On MacOS with a Silicone Proccesor all of your config files will be found in `/opt/homebrew/etc/`
+      3. On MacOS with a Silicone Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/
       ```sh
       npm install
       ```
