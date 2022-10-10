@@ -165,10 +165,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
    ```
     * Nginx Configuration 
       <br>
-      3. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
+3. On MacOS with a Silicon Proccesor all of your config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find your config files in `/usr/local/etc/`. 
       <br>
         Inside this directory navigate to a folder called `nginx`, and open the `nginx.conf` file with a editor of your choice.
-      4. Nginx.conf file <br>
+4. Nginx.conf file 
+      <br>
         In the `nginx.conf` file change the following configuration to the following.
         ```nginx
         listen       YOUR_PORT;
@@ -202,10 +203,11 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
         ```
     * MySQL Configuration 
       <br>
-      5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+  5. On MacOS with Silicon Proccesor all of you MySQL config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this direcotry navigate to a folder called `/etc/` which can be found in the step above.
-      6. In the `my.conf` file change the following configuration to the following. <br>
+  6. In the `my.conf` file change the following configuration to the following. 
+      <br>
          Note: The default IP for hosting localy is `127.0.0.1`
         ```nginx
         [mysqld]
@@ -238,7 +240,8 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       <br>
       12. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
-        Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. <br>
+        Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
+      <br>
         If u want to see all of the users use the command below in the `/opt/homebrew/etc/`.
       ```sh
       $ ls -l /usr/local/etc/php
