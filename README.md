@@ -229,16 +229,28 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
       ![database-screenshot][database-screenshot]  
 
       If you see this prompt with MySQL in you terminal that means your now connected as the database.  
-      Note: To display all of the existing databases type in the following query as shown below.
+      Note: To display all of the existing databases type in the following `query` as shown below.
 
-        ```sh
+        ```sql
           SHOW DATABASES;
         ```
   **9**.
-
+  Creating the database. type in the following `query` as shown below to create a database.
+    ```sql
+      CREATE DATABASE database_name;
+    ```
+  After inserting this `query` use the following `query` to see if the database was created.
+    ```sql
+      SHOW DATABASES;
+    ```
+  **10**
+  Inserting the database. type in the following `query` in the mysql terminal.
+    ```sql
+      mysql database_name < db.sql;
+    ``` 
     * PHP Configuration (Optional)
-      <br>
-      12. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
+    <br>
+  **12**. On MacOS with Silicon Proccesor all of you PHP config files will be found in `/opt/homebrew/etc/` else for normal MacOS with Intel Proccesor you will find you config files in `/usr/local/etc/`.
       <br>
         Inside this directory navigate to a folder called `php`, and it's optional you dont need to edit anything in that file for the application to work. 
       <br>
