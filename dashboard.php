@@ -198,6 +198,13 @@ nav ul li a {
             </li>
 
             <li class="signout nav-item">
+                <button class="btn-danger signoutbtn">
+                    <a href="/Inv/admin/adminPanel.php" class="nav-link text-white">
+                        Admin Login
+                    </a>
+                </button>
+            </li>
+            <li class="signout nav-item">
                 <button class="btn-primary signoutbtn">
                     <a href="logout.php" class="nav-link text-white">
                         Sign Out
@@ -325,7 +332,7 @@ nav ul li a {
                                 <br>
                                 <input type="text" class="form-control" name="s_n" placeholder="Enter Serial Number" required>
                                 <br>
-                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3" required></textarea>
+                                <textarea style="resize: none;" class="form-control" name="desc" placeholder="Enter Item Description" cols="60" rows="3"></textarea>
                                 <br>
                                 <br>
                                 <div class="input-group">

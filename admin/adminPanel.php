@@ -1,13 +1,9 @@
 <?php
-require_once "/Applications/MAMP/htdocs/Inv/database/config.php";
-require '/Applications/MAMP/htdocs/Inv/func/functions.php';
+require_once "/database/config.php";
+require '/func/functions.php';
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: index.php");
-    exit;
-}
 
 ?>
 <!DOCTYPE html>
@@ -122,7 +118,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                 <li class="signout nav-item">
                     <button class="btn-primary signoutbtn">
-                        <a href="logout.php" class="nav-link text-white">
+                        <a href="/Inv/logout.php" class="nav-link text-white">
                             Sign Out
                         </a>
                     </button>

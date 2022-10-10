@@ -1,5 +1,5 @@
 <?php
-require_once '/Applications/MAMP/htdocs/Inv/database/config.php';
+require_once '/database/config.php';
 
 function createItem($request){
     global $con;

@@ -5,8 +5,8 @@ session_start();
  
 // admin access soon
 
-// Include config file
-require_once "/Applications/MAMP/htdocs/Inv/database/config.php";
+// Include config
+require_once "/database/config.php";
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";
@@ -51,9 +51,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(mysqli_stmt_execute($stmt)){
                 // Password updated successfully. Destroy the session, and redirect to login page
                 session_destroy();
-                header("location: index.php");
+                header("location: /Inv/index.php");
                 exit();
-            } else{
+            } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
 

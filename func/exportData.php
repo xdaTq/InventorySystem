@@ -1,7 +1,7 @@
 <?php 
  
     // Load the database configuration file 
-    require_once '/Applications/MAMP/htdocs/Inv/database/config.php'; 
+    require_once '/database/config.php'; 
  
     $query = mysqli_query($con, "SELECT * FROM items ORDER BY id ASC"); 
     
