@@ -104,7 +104,7 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
+* [![Apache][Apache.org]][Apache-url]
 * [![Nginx][Nginx.com]][Nginx-url]
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
@@ -249,7 +249,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[Apache.js]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=white
+<!-- Built with --->
+[Apache.org]: https://img.shields.io/badge/apache-000000?style=for-the-badge&logo=apache&logoColor=white
 [Apache-url]: https://apache.org/
 [Nginx.com]: https://img.shields.io/badge/Nginx-20232A?style=for-the-badge&logo=Nginx&logoColor=039138
 [Nginx-url]: https://nginx.com/
