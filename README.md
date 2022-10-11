@@ -115,6 +115,7 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Jenkins][Jenkins.io]][Jenkins-url]
+* [![Git][Git-scm.com]][Git-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -412,4 +413,6 @@ For any further development help go to <a href="https://github.com/xdaTq/Invento
 [Docker.com]: https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white
 [Docker-url]: https://www.docker.com
 [Jenkins.io]: https://img.shields.io/badge/Jenkins-d23833?style=for-the-badge&logo=jenkins&logoColor=black
-[Jenkins-url]: https://www.jenkins.io 
+[Jenkins-url]: https://www.jenkins.io
+[Git.com]: https://img.shields.io/badge/Git-f94e28?style=for-the-badge&logo=git&logoColor=black
+[Git-url]: https://git-scm.com
