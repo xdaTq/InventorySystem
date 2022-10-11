@@ -1,6 +1,6 @@
 <?php
 require_once "./database/config.php";
-require './func/functions.php';
+require "./func/functions.php";
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page
@@ -202,7 +202,7 @@ nav ul li a {
 
             <li class="signout nav-item">
                 <button class="btn-danger signoutbtn">
-                    <a href="/Inv/admin/adminPanel.php" class="nav-link text-white">
+                    <a href="admin/adminPanel.php" class="nav-link text-white">
                         Admin Login
                     </a>
                 </button>

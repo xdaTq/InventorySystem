@@ -1,6 +1,6 @@
 <?php
-require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
-require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
+require_once "./database/config.php";
+require './func/functions.php';
 
 session_start();
 

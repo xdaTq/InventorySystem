@@ -6,8 +6,7 @@ session_start();
 // admin access soon
 
 // Include config
-require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
-require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
+require_once dirname(__DIR__)."/database/config.php";
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";
@@ -52,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(mysqli_stmt_execute($stmt)){
                 // Password updated successfully. Destroy the session, and redirect to login page
                 session_destroy();
-                header("location: /Inv/index.php");
+                header("location: ../index.php");
                 exit();
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
@@ -104,7 +103,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link ml-2" href="dashboard.php">Cancel</a>
+                <a class="btn btn-link ml-2" href="../dashboard.php">Cancel</a>
             </div>
         </form>
     </div>    

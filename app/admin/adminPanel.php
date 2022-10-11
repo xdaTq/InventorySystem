@@ -1,6 +1,5 @@
 <?php
-require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
-require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
+require_once dirname(__DIR__)."/database/config.php";
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page
@@ -78,7 +77,7 @@ session_start();
         <!-- Sidebar -->
         <nav class="nav flex-column">
             <ul class="nav flex-column">
-                <li class="logo"><img alt="" src="/Applications/MAMP/htdocs/Inv/img/default.png"></li>
+                <li class="logo"><img alt="" src="../img/default.png"></li>
                 <h5 class="text-black">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?></h5>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="profile.php">
@@ -118,7 +117,7 @@ session_start();
 
                 <li class="signout nav-item">
                     <button class="btn-primary signoutbtn">
-                        <a href="/Inv/logout.php" class="nav-link text-white">
+                        <a href="../logout.php" class="nav-link text-white">
                             Sign Out
                         </a>
                     </button>

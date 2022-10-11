@@ -9,9 +9,9 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
 
 // Include config file
-require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
-require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
- 
+require_once "./database/config.php";
+require "./func/functions.php";
+
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
+        <h2>Login</h2> 
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
@@ -131,6 +131,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
+            <p>Create account <a href="../admin/3d4d5h6h-2019-2023.php">Here</a></p>
         </form>
     </div>
 </body>

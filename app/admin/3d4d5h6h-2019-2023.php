@@ -1,8 +1,7 @@
 <?php
 // create account
 // Include config file
-require_once "/Users/erwinkujawski/Desktop/Inv/database/config.php";
-require '/Users/erwinkujawski/Desktop/Inv/func/functions.php';
+require_once dirname(__DIR__)."/database/config.php";
 
 // admin access
 
@@ -86,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: /Users/erwinkujawski/Desktop/Inv/index.php");
+                header("location: ../index.php");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
@@ -146,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Create">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
-            <p>Back to Normal <a href="/Inv/index.php">Back!</a>.</p>
+            <p>Back to Normal <a href="../index.php">Back!</a>.</p>
         </form>
     </div>    
 </body>
