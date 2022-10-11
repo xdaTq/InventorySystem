@@ -291,10 +291,10 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-* ###### Purpose
+* ##### Purpose
   The main pupose of this project is to create an app to keep track of inventory and supply.
   For example how many pens you have to how many chairs you have, it can be uses for any possible scenario of keeping track of supply & inventory.
-* ###### How to use
+* ##### How to use
   - **Creating Item**  
     After creating an account you simply log in and in the dashboard menu you should see a `+ Add Items` button you can interact with it but simply clicking it, you should see a popup window where you can type in your item information and submit it to the database which is display directly on the dashboard.
 
