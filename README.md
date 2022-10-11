@@ -111,11 +111,11 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 * [![Php][Php.net]][Php-url]
 * [![Docker][Docker.com]][Docker-url]
 * [![Apache][Apache.org]][Apache-url]
+* [![Git][Git.com]][Git-url]
 * [![Nginx][Nginx.com]][Nginx-url]
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Jenkins][Jenkins.io]][Jenkins-url]
-* [![Git][Git.com]][Git-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -294,11 +294,12 @@ Use this space to show useful examples of how a project can be used. Additional 
 * ###### Purpose
   The main pupose of this project is to create an app to keep track of inventory and supply.
   For example how many pens you have to how many chairs you have, it can be uses for any possible scenario of keeping track of supply & inventory.
-
-  ![adding-items][adding-items] 
 * ###### How to use
   - Creating Item
     After creating an account you simply log in and in the dashboard menu you should see a `+ Add Items` button you can interact with it but simply clicking it, you should see a popup window where you can type in your item information and submit it to the database which is display directly on the dashboard.
+
+    ![adding-items][adding-items] 
+
   - Editing Item
     After adding an item to the database you have the option to edit it simply by pressing the `edit` button which can be seen on the `item` displayed on the dashboard database. After clicking the `edit` button it will redirect you to the `edit` page where you can change the information of the item and simply submit it to the datbase which will automaticlly update after the submition of the new `item` information.
 
