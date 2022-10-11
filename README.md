@@ -115,7 +115,7 @@ For more information about <a href="#usage">Usage</a> or <a href="#getting-start
 * [![Mysql][Mysql.com]][Mysql-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Jenkins][Jenkins.io]][Jenkins-url]
-* [![Git][Git-scm.com]][Git-url]
+* [![Git][Git.com]][Git-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
