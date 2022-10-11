@@ -302,6 +302,10 @@ Use this space to show useful examples of how a project can be used. Additional 
 
   - Editing Item
     After adding an item to the database you have the option to edit it simply by pressing the `edit` button which can be seen on the `item` displayed on the dashboard database. After clicking the `edit` button it will redirect you to the `edit` page where you can change the information of the item and simply submit it to the datbase which will automaticlly update after the submition of the new `item` information.
+  - Exporting Database
+    If you would like to export the database as an execl spreedsheet or csv file you can simply do it by pressing the `export` button on the top navigation bar.
+    And the whole database will be saved to your computer as a csv file which then can be used for excel
+    
 
   
 
