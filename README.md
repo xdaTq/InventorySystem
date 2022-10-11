@@ -279,6 +279,16 @@ For this project `Docker` can be used for simplifying  the installation. Here yo
   ```sh
   ls -l /usr/local/etc/php
   ```
+* #### Telnet Usage
+  **12**
+  In order to check the server connection you have to have telnet install which you should have if u followed all the steps, what telnet dose it allows you to see and connect to the `server`/`localhost` and see if everything is running smoothly and you can do that by entering the following command below.  
+  
+  Note: The default IP for your localhost server is going to be `127.0.0.1` and the port are going to be the one you configured for nginx
+
+  ```sh
+  telnet 127.0.0.1 PORT
+  ```
+  
 #### Linux
    * ###### Comming soon...
 
