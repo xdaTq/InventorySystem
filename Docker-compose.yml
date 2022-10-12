@@ -3,10 +3,10 @@ services:
     web:
         image: nginx:latest
         ports:
-            - "8888:88" #change this to what every port you want
+            - "8080:80" #change this to what every port you want
         volumes:
             - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
-            - ./app:/inventory/app
+            - ./inventory/app:/inventory/app
         depends_on:
             - php
             - mysql
@@ -16,7 +16,7 @@ services:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./app:/inventory/app
+            - ./inventory/app:/inventory/app
         restart: always
     mysql:
         image: mysql:latest
