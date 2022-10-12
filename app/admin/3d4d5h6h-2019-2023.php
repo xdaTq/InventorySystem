@@ -1,7 +1,7 @@
 <?php
 // create account
 // Include config file
-require_once dirname(__DIR__)."/database/config.php";
+require_once dirname(__DIR__).'/database/config.php';
 
 // admin access
 

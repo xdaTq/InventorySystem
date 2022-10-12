@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__)."/database/config.php";
+require_once dirname(__DIR__).'/database/config.php';
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page

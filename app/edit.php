@@ -1,5 +1,5 @@
 <?php
-require_once "./database/config.php";
+require_once './database/config.php';
 require './func/functions.php';
 
 session_start();
