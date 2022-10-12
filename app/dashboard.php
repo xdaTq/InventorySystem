@@ -170,7 +170,7 @@ nav ul li a {
     <!-- Sidebar -->
     <nav class="nav flex-column">
         <ul class="nav flex-column">
-            <li class="logo"><img alt="" src="./img/default.png"></li>
+            <li class="logo"><img alt="" src="../img/default.png"></li>
             <h5 class="text-black">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?></h5>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="profile.php">

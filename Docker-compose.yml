@@ -1,0 +1,32 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8888:88" #change this to what every port you want
+        volumes:
+            - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+            - ./app:/inventory/app
+        depends_on:
+            - php
+            - mysql
+        restart: always
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./app:/inventory/app
+        restart: always
+    mysql:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: 'root'
+            MYSQL_DATABASE: 'InventorySys'
+        volumes:
+            - inventory:/var/lib/mysql
+        ports:
+            - 3306:3306
+        restart: always
+volumes:
+    inventory: {}
